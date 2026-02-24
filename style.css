@@ -351,11 +351,10 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-.modal-inner .btn {
-    margin-top: 2rem;
-    border-radius: 2px;
-
-    width: 1rem;
+.modal-inner .btns {
+    margin: 1rem;
+    border-radius: 2;
+    /* width: 5rem; */
 }
 
 .video-bg {
@@ -379,7 +378,7 @@ nav ul li a:hover {
 
 .home {
     height: 600px;
-    padding: 20px;
+    padding: 0px;
 
 }
 
