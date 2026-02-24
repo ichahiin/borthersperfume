@@ -352,9 +352,10 @@ nav ul li a:hover {
 }
 
 .modal-inner .btn {
-    margin: 1rem;
-    border-radius: 0;
-    /* width: 5rem; */
+    margin-top: 2rem;
+    border-radius: 2px;
+
+    width: 1rem;
 }
 
 .video-bg {
