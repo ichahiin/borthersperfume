@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brothers Perfume</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img class="logo" src="img/logo-with-text.svg" alt="Brothers Perfume Logo">
+        <ul id="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#parfums">Nouveautés</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#" onclick="toggleModal()">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.svg" alt="Menu button" class="menu-btn" onclick="toggleMenu()">
+    </nav>
+
+
+    <header id="header" class="header">
+        <h1>Title</h1>
+        <video class="video-bg" autoplay muted loop src="img/BackGrounds/output.mp4" type="video/mp4"></video>
+    </header>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-inner">
+            <h2>Contactez nous sur Whatsapp</h2>
+            <p>
+                Pour Cloturer votre commande de parfums veuillez nous contacter sur Whatsapp ou Telegram.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1Nv76uLME">
+                    <i class="bx bxl-meta"></i>
+                </a>
+                <a href="https://instagram.com/brotherperfume22">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://wa.me/+213655697803">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <!-- <a href="#">
+                <i class="bx bxl-telegram"></i>
+            </a> -->
+            </div>
+            <button class="btns" id="closeModal">Fermer</button>
+        </div>
+    </div>
+
+
+    <section class="slider-container" id="collection">
+         <div class="headers">
+            <h2>Nos parfums</h2>
+        </div>
+        <div class="slider-images">
+            <div class="slider-img">
+                <img loading="lazy" src="img/Perfumes/1.jpg" alt="1" />
+                <h1>Parfum1</h1>
+                <div class="details">
+                    <h2>Parfum1</h2>
+                    <p>Description</p>
+                    <!-- <button class="btns" id="openModal" onclick="toggleModal()">Commander</button> -->
+                </div>
+            </div>
+            <div loading="lazy" class="slider-img">
+                <img src="img/Perfumes/2.jpg" alt="2" />
+                <h1>Parfum2</h1>
+                <div class="details">
+                    <h2>Parfum2</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img loading="lazy" src="img/Perfumes/3.jpg" alt="3" />
+                <h1>Parfum3</h1>
+                <div class="details">
+                    <h2>Parfum3</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img loading="lazy" src="img/Perfumes/4.jpg" alt="4" />
+                <h1>Parfum4</h1>
+                <div class="details">
+                    <h2>Parfum4</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img loading="lazy" src="img/Perfumes/5.jpg" alt="5" />
+                <h1>Parfum5</h1>
+                <div class="details">
+                    <h2>Parfum5</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img loading="lazy" src="img/Perfumes/6.jpg" alt="6" />
+                <h1>Parfum6</h1>
+                <div class="details">
+                    <h2>Parfum6</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img loading="lazy" src="img/Perfumes/1.jpg" alt="7" />
+                <h1>Parfum7</h1>
+                <div class="details">
+                    <h2>Parfum7</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="home" id="home">
+        <div class="home-content">
+            <h1>Elégance Mystère</h1>
+            <h3>Santeur boisée</h3>
+            <p>Un mélange captivant de notes boisées et épicées, ce parfum incarne l'homme moderne : audacieux,
+                charismatique et inoubliable.
+                Chaque vaporisation raconte une histoire de conquête et de passion. Explorez votre véritable potentiel
+                et laissez une empreinte indélébile partout où vous allez.
+            </p>
+            <div class="group-btn">
+                <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/BackGrounds/test111.jpg" alt="">
+        </div>
+    </section> -->
+
+    <section id="parfums" class="featured-perfumes">
+        <div class="headers">
+            <h2>Nouveautés</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Example Product -->
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum1.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat Products (Product_2 to Product_6)... same structure as above -->
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum2.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum3.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum4.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum5.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" id="Product_1">
+                <img loading="lazy" src="img/New/parfum6.png" alt="Product 1">
+                <h3>Nom du parfum</h3>
+                <p>Description du parfum </p>
+                <div>
+                    <p class="Discount">15% Promotion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="price">600 DA</span>
+                        <button class="btns" id="openModal" onclick="toggleModal()">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info" id="infos">
+
+    </section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1Nv76uLME">
+                <i class="bx bxl-meta"></i>
+            </a>
+            <a href="https://instagram.com/brotherperfume22">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://wa.me/+213655697803">
+                <i class="bx bxl-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2026 BROTHERS Perfume | Tous Droits Réservés.</p>
+        <p class="author">Website by TSAKI Chahine</p>
+    </footer>
+
+
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
